@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Damy409/cicd-mi-app.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean package'
