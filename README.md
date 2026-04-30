@@ -1,30 +1,43 @@
-# Pipeline CI/CD con Jenkins
+# CI/CD Pipeline con Jenkins
 
-Nombre: Damy Yuriana Villegas Ordoñez 
-Codigo: A00398942
+**Estudiante:** Damy Villegas  
+**Código:** A00398942  
 
-Este proyecto implementa un pipeline de integración continua utilizando Jenkins.
+## Objetivo
 
-## Etapas
+Automatizar el ciclo de vida del software desde la integración del código hasta su despliegue, garantizando calidad y seguridad en cada etapa.
 
-- Build: construcción del proyecto
-- Análisis estático: validación de calidad
-- Quality Gate: control de calidad
-- Docker Build: construcción de imagen
-- Security Scan: análisis de vulnerabilidades
-- Deploy: despliegue de la aplicación
+## Etapas del Pipeline
 
-## Tecnologías
+1. **Build**
+   - Construcción del proyecto
+2. **Static Analysis (SonarQube)**
+   - Análisis de calidad del código
+3. **Quality Gate**
+   - Validación de estándares de calidad
+4. **Docker Build**
+   - Construcción de la imagen del sistema
+5. **Security Scan (Trivy)**
+   - Análisis de vulnerabilidades
+6. **Deploy**
+   - Despliegue de la aplicación
+
+## Tecnologías utilizadas
 
 - Jenkins
 - Docker (simulado)
 - SonarQube (simulado)
 - Trivy (simulado)
+- GitHub
 
-## Flujo
+## Flujo de trabajo
 
-El pipeline se ejecuta automáticamente tras cambios en el repositorio, garantizando calidad antes del despliegue.
+Cada vez que se realiza un cambio en el repositorio, Jenkins ejecuta automáticamente el pipeline, validando el código antes de su despliegue.
+
+## Resultados
+
+Se logró implementar un pipeline funcional que demuestra el proceso de CI/CD, asegurando calidad, seguridad y automatización.
 
 ## Nota
 
-Debido a limitaciones del entorno, algunas etapas fueron simuladas para demostrar el flujo completo CI/CD.
+Debido a limitaciones del entorno (Jenkins ejecutándose en contenedor Docker sin herramientas adicionales como Maven o Docker interno), algunas etapas fueron simuladas para demostrar el flujo completo del pipeline.
